@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/Tests/player/Scene.jpg" type="Texture" id=1]
+[ext_resource path="res://scn/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scn/Tile.tscn" type="PackedScene" id=3]
+
+[node name="MainScene" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -1.0
+margin_top = -2.0
+margin_right = 1027.0
+margin_bottom = 597.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Player" parent="TextureRect" instance=ExtResource( 2 )]
+position = Vector2( 144, 285 )
+
+[node name="Tile" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 113, 434 )
+
+[node name="Tile4" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 937, 474 )
+scale = Vector2( 0.817673, 0.737728 )
+
+[node name="Tile5" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 521, 306 )
+rotation = -3.12785
+scale = Vector2( 0.817673, 0.213932 )
+
+[node name="Tile6" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 777, 258 )
+rotation = -3.12785
+scale = Vector2( 0.817673, 0.213932 )
+
+[node name="Tile7" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 265, 226 )
+rotation = -3.12785
+scale = Vector2( 0.817673, 0.213932 )
+
+[node name="Tile8" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 89, 138 )
+rotation = -3.12785
+scale = Vector2( 0.817673, 0.213932 )
+
+[node name="Tile2" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 385, 402 )
+scale = Vector2( 1.36659, 1.19415 )
+
+[node name="Tile3" parent="TextureRect" instance=ExtResource( 3 )]
+position = Vector2( 697, 434 )
+scale = Vector2( 1.32001, 1 )
